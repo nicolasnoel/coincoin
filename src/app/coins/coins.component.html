@@ -1,0 +1,15 @@
+<h2>My Coins</h2>
+<ul class="coins">
+  <li *ngFor="let coin of coins" >
+    <span class="badge">{{coin.symbol | uppercase}}</span>
+    <span class="value">{{coin.qty}}</span> 
+    <span class="value">{{coin.price}}</span> 
+    <span class="value">{{coin.value}}</span>
+  </li>
+  <li>
+    <span class="badge">&nbsp;</span>
+    <span class="value">&nbsp;</span> 
+    <span class="value">Total</span> 
+    <span class="value">{{total}}</span>
+  </li>
+</ul>
